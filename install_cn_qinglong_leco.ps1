@@ -38,7 +38,10 @@ if ($install_torch -eq "y" -or $install_torch -eq "Y" -or $install_torch -eq "")
 pip install --upgrade -r requirements.txt -i https://mirror.baidu.com/pypi/simple
 Check "其他依赖安装失败。"
 
-pip install https://github.com/jllllll/bitsandbytes-windows-webui/releases/download/wheels/bitsandbytes-0.39.1-py3-none-win_amd64.whl
+pip install --upgrade pytorch_lightning -i https://mirror.baidu.com/pypi/simple
+Check "pytorch-lighting安装失败。"
+
+pip install ./bitsandbytes_windows/bitsandbytes-0.39.1-py3-none-win_amd64.whl
 Check "其他依赖安装失败。"
 
 Write-Output "安装 bitsandbytes..."
