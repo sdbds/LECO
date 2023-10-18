@@ -41,7 +41,7 @@ Check "其他依赖安装失败。"
 pip install --upgrade pytorch_lightning -i https://mirror.baidu.com/pypi/simple
 Check "pytorch-lighting安装失败。"
 
-pip install ./bitsandbytes_windows/bitsandbytes-0.39.1-py3-none-win_amd64.whl
+pip install bitsandbytes==0.41.1 --no-deps --prefer-binary --extra-index-url=https://jllllll.github.io/bitsandbytes-windows-webui --force
 Check "其他依赖安装失败。"
 
 Write-Output "安装 bitsandbytes..."
